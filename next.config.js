@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
+  images: {
+    domains: ["git.fullscript.io"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
