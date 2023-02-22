@@ -8,18 +8,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col max-w-6xl mx-auto px-4 sm:px-6">
-        <header className="text-center p-4">
+      <body className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 sm:px-6">
+        <header className="p-4 text-center">
           <Link
             href="/"
-            className="font-bold tracking-tight text-center text-2xl lg:text-4xl"
+            className="text-center text-2xl font-bold tracking-tight transition duration-200 hover:text-gray-600 lg:text-4xl"
           >
             Gitlab dashboard
           </Link>
         </header>
-        <main className="flex-1 flex flex-col">{children}</main>
-        <footer className="text-center p-4">
-          <Link href="#" target="_blank" className="underline">
+        <main className="flex flex-1 flex-col">{children}</main>
+        <footer className="p-4 text-center">
+          <Link
+            href="https://github.com/bambie1/next-13-gitlab-dashboard"
+            target="_blank"
+            className="underline"
+          >
             Github repo
           </Link>
           <p className="text-gray-500">(c) 2023</p>

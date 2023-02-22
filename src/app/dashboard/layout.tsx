@@ -24,7 +24,7 @@ export default async function DashboardLayout({
     <section>
       <div className="mb-10 text-center">
         <p>Current user</p>
-        <div className="flex items-center justify-center gap-3">
+        <div className="mt-4 flex flex-col items-center justify-center gap-1">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={`${process.env.NEXT_PUBLIC_GITLAB_URL}/${user.avatarUrl}`}
