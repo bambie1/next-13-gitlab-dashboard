@@ -3,8 +3,8 @@ import Head from "next/head";
 import { gql } from "graphql-request";
 
 import { gqlClient } from "@/lib/gqlClient";
-import AuthoredMR, { IAuthoredMR } from "@/app/dashboard/AuthoredMR";
-import ForReviewMR, { IReviewMR } from "@/app/dashboard/ForReviewMR";
+import AuthoredMR, { IAuthoredMR } from "@/components/AuthoredMR";
+import ForReviewMR, { IReviewMR } from "@/components/ForReviewMR";
 
 const SSRDashboard: NextPage = (props: any) => {
   const { user } = props.data;

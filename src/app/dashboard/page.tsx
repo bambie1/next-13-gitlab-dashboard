@@ -1,8 +1,8 @@
 import { gqlClient } from "@/lib/gqlClient";
 import { gql } from "graphql-request";
 
-import AuthoredMR, { IAuthoredMR } from "./AuthoredMR";
-import ForReviewMR, { IReviewMR } from "./ForReviewMR";
+import AuthoredMR, { IAuthoredMR } from "@/components/AuthoredMR";
+import ForReviewMR, { IReviewMR } from "@/components/ForReviewMR";
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
