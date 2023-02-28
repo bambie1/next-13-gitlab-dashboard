@@ -83,7 +83,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   try {
     const data = await gqlClient.request(userQuery);
 
-    await sleep(5000);
+    await sleep(1000);
 
     return {
       props: { data },

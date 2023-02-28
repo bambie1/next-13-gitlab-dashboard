@@ -10,7 +10,7 @@ async function getGitlabInfo() {
   try {
     const data = await gqlClient.request(authoredQuery);
 
-    await sleep(5000);
+    await sleep(1000);
     return data;
   } catch (error) {
     console.log({ error });
